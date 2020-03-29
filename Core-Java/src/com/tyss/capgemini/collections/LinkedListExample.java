@@ -17,6 +17,15 @@ public class LinkedListExample {
 		llist.add(23);
 		llist.add(null);
 
+		System.out.println(llist.size());
+		System.out.println("*******************************************");
+		llist.addFirst(5);
+		llist.addLast("hey!");
+		
+		System.out.println(llist.size());
+		System.out.println("*******************************************");
+		
+		
 		System.out.println("***************For-each****************");
 		for (Object i : llist) {
 			System.out.println(i);
@@ -27,7 +36,8 @@ public class LinkedListExample {
 		}
 		System.out.println("***************Iterator*****************");
 		Iterator<Object> it = llist.iterator();
-
+		
+		
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
@@ -36,6 +46,16 @@ public class LinkedListExample {
 		for (int i = 0; i < llist.size(); i++) {
 			System.out.println(li.next());
 		}
+		
+		System.out.println("*******************************************");
+		System.out.println(llist.peek());
+		System.out.println("*******************************************");
+		System.out.println(llist.peekFirst());
+		System.out.println("*******************************************");
+		System.out.println(llist.peekLast());
+		
+
+
 	}
 
 }

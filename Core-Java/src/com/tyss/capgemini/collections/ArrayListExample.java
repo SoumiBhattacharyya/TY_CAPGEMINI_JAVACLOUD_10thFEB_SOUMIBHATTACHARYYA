@@ -18,6 +18,7 @@ public class ArrayListExample {
 		al.add(null);
 		al.add(10);
 
+		System.out.println(al.indexOf('C'));
 		System.out.println("***************For-each loop*****************");
 		for (Object i : al) {
 			System.out.println(i);
